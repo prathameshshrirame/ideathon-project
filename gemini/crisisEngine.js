@@ -202,14 +202,14 @@ export async function analyzeCrisis(input, apiKey = process.env.GEMINI_API_KEY) 
   const ai = new GoogleGenAI({ apiKey });
 
   const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
+    model: "gemini-3.6-flash",
     contents: `User emergency description: "${userDescription}"`,
     config: {
       systemInstruction: SYSTEM_INSTRUCTION,
       responseMimeType: "application/json",
       responseSchema: responseSchema,
       temperature: 0.2,
-      maxOutputTokens: 400
+      maxOutputTokens: 800
     }
   });
 
