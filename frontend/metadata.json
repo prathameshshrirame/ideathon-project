@@ -1,0 +1,10 @@
+{
+  "name": "CrisisMate",
+  "description": "Emergency Decision Assistant that helps users understand what to do next during an emergency.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
