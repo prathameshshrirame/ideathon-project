@@ -12,12 +12,11 @@
 ## 2. Backend
 
 - [ ] Backend starts successfully
-- [ ] POST /api/analyze exists
+- [ ] POST /api/analyze works
 - [ ] Request validation works
-- [ ] Backend accepts the agreed request format
-- [ ] Backend sends the correct data to Gemini
+- [ ] Gemini connection works
 - [ ] Gemini response is validated
-- [ ] Backend returns the agreed response format
+- [ ] Correct response is returned to frontend
 - [ ] Errors are handled correctly
 - [ ] CORS works during development
 
@@ -29,26 +28,26 @@
 - [ ] Response contains all required fields
 - [ ] emergency_type uses an allowed value
 - [ ] risk_level uses an allowed value
-- [ ] No Markdown code block around JSON
-- [ ] Invalid/non-emergency input is handled correctly
+- [ ] Response is valid JSON
+- [ ] Non-emergency input is handled correctly
 
 ## 4. Firebase
 
 - [ ] Firestore connection works
-- [ ] emergency session can be saved
+- [ ] Emergency session can be saved
 - [ ] Required fields are stored
 - [ ] Timestamp is stored
-- [ ] Firebase failure does not prevent the user from receiving the crisis response
+- [ ] Firebase failure does not prevent the crisis response
 - [ ] Security rules are checked
-- [ ] No secret keys are committed
+- [ ] No secrets are committed
 
 ## 5. End-to-End
 
-- [ ] Frontend → Backend works
-- [ ] Backend → Gemini works
-- [ ] Gemini → Backend works
-- [ ] Backend → Firebase works
-- [ ] Backend → Frontend works
+- [ ] Frontend → Backend
+- [ ] Backend → Gemini
+- [ ] Gemini → Backend
+- [ ] Backend → Firebase
+- [ ] Backend → Frontend
 
 ## 6. Scenarios
 
@@ -87,7 +86,7 @@ Input:
 "I want to order pizza."
 
 - [ ] Does not falsely classify as an emergency
-- [ ] User receives an appropriate response
+- [ ] Appropriate response displayed
 
 ## 7. Final Demo
 
